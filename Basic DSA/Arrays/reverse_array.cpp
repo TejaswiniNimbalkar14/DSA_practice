@@ -1,8 +1,9 @@
 //Reverse the array
 
+#include<iostream>
+using namespace std;
+
 //Method 1 - Iterative way - O(n)
-// #include<iostream>
-// using namespace std;
 
 // int main(){
 //     int n;
@@ -25,8 +26,6 @@
 // }
 
 //Method 2 - Recursive way - O(n)
-#include<iostream>
-using namespace std;
 
 void reverse_array(int arr[], int start, int end){
     if(start >= end){
