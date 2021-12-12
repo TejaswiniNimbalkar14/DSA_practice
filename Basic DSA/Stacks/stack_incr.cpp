@@ -1,6 +1,9 @@
 //Leetcode Problem 1381
 //Design a stack with increment operations
 
+#include<iostream>
+using namespace std;
+
 // class CustomStack {
 //     int s;
 //     int* arr;
