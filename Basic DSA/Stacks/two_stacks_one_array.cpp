@@ -1,5 +1,6 @@
 //Implement two stacks using one array
 //TC : O(1)
+//GFG Problem Link: https://practice.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1#
 
 #include<iostream>
 using namespace std;
