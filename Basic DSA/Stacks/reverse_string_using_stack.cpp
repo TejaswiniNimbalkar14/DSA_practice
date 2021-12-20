@@ -23,3 +23,7 @@ char* reverse(char *S, int len)
     }
     return arr;
 } 
+
+int main() {
+    //handle input-output here
+}

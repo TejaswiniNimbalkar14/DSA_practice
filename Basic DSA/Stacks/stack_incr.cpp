@@ -87,3 +87,7 @@ public:
  * int param_2 = obj->pop();
  * obj->increment(k,val);
  */
+
+int main() {
+    //handle input-output here
+}

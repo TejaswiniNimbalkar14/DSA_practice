@@ -56,3 +56,7 @@ class TwoStacks {
         return arr[top2++];
     }
 };
+
+int main() {
+    //handle input-output here
+}
