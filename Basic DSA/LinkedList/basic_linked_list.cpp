@@ -53,13 +53,29 @@ bool search(node* head, int key){
     return false;
 }
 
+void deleteFromHead(node* &head){
+    node* toDelete = head;
+    head = head->next;
+
+    delete toDelete;
+}
+
 void deleteFromLL(node* &head, int val){
+    if(head == NULL)
+        return;
+
+    if(head->next == NULL){
+        deleteFromHead(head);
+        return;
+    }
     node* temp = head;
     while(temp->next->data != val){
         temp = temp->next;
     }
     node* toDelete = temp->next;
     temp->next = temp->next->next;
+
+    delete toDelete;
 }
 
 int main() {
@@ -76,7 +92,7 @@ int main() {
     cout<<endl;
     string s = search(head, 8) ? "true" : "false";
     cout<<s<<endl;
-    deleteFromLL(head, 4);
+    deleteFromLL(head, 5);
     display(head);
 
     return 0;
