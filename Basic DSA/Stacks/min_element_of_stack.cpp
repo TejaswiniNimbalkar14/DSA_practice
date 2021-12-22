@@ -55,17 +55,18 @@ public:
     
     void push(int val) {
         long long v = val;
-       if(s.empty()){
-           minEle = v;
-           s.push(v);
-       }
-        if(v >= minEle)
-            s.push(v);
-        else{
-            long long temp = 2 * v * 1LL - minEle;
-            s.push(temp);
+        if(s.empty()){
             minEle = v;
-        }
+            s.push(v);
+        }else {
+            if(v >= minEle)
+                s.push(v);
+            else{
+                long long temp = 2 * v * 1LL - minEle;
+                s.push(temp);
+                minEle = v;
+            }
+       }
     }
     
     void pop() {
