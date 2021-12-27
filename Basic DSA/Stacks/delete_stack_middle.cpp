@@ -1,6 +1,7 @@
 //Delete middle element of a stack
 //TC: https://practice.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1
 //GFG Problem: 
+//TC: O(k)
 
 #include<iostream>
 #include<stack>

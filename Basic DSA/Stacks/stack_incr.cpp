@@ -4,6 +4,7 @@
 #include<iostream>
 using namespace std;
 
+//O(k) - copmplexity for increment 
 // class CustomStack {
 //     int s;
 //     int* arr;
@@ -36,8 +37,8 @@ using namespace std;
 //         }
 //     }
 // };
-//O(k) - copmplexity
 
+//TC: O(1) - for all
 class CustomStack {
     int* arr;
     int* incr;
@@ -78,7 +79,6 @@ public:
         }
     }
 };
-//TC: O(1)
 
 /**
  * Your CustomStack object will be instantiated and called as such:

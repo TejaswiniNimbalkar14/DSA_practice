@@ -6,7 +6,7 @@
 #include<queue>
 using namespace std;
 
-//Approach 1: Using tw stacks
+//Approach 1: Using two stacks
 //TC: O(N) for push and O(1) for others. AS: O()
 class MyStack {
 public:
@@ -34,7 +34,7 @@ public:
     
     int top() {
         if(q2.empty())
-            return true;
+            return -1;
         return q2.front();
     }
     
