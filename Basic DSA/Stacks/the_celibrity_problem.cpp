@@ -2,6 +2,7 @@
 //GFG Problem Link: https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1
 
 #include<iostream>
+#include<stack>
 using namespace std;
 
 class Solution 
