@@ -3,6 +3,44 @@
 #include<iostream>
 using namespace std;
 
+//Approach 2: Better TC: = O(4n) =~ O(n) AS: O(3n)
+// class Solution {
+// public:
+//     int largestRectangleArea(vector<int>& h) {
+//         int n = h.size();
+//         stack<int> s;
+//         int leftSmall[n], rightSmall[n];
+        
+//         for(int i = 0; i < n; i++){
+//             while(!s.empty() && h[s.top()] >= h[i])
+//                 s.pop();
+            
+//             if(s.empty())   leftSmall[i] = 0;
+//             else    leftSmall[i] = s.top() + 1;
+//             s.push(i);
+//         }
+        
+//         while(!s.empty())   s.pop();
+        
+//         for(int i = n - 1; i >= 0; i--){
+//             while(!s.empty() && h[s.top()] >= h[i])
+//                 s.pop();
+            
+//             if(s.empty())   rightSmall[i] = n - 1;
+//             else    rightSmall[i] = s.top() - 1;
+//             s.push(i);
+//         }
+        
+//         int max_area = INT_MIN;
+//         for(int i = 0; i < n; i++){
+//             int area = (rightSmall[i] - leftSmall[i] + 1) * h[i];
+//             max_area = max(max_area, area);
+//         }
+//         return max_area;
+//     }
+// };
+
+//Approach1: BruteForce TC:O(n^2) AS:O(1)
 long long getMaxArea(long long arr[], int n)
     {
         // Your code here
