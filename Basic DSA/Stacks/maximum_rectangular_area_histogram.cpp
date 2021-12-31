@@ -37,6 +37,24 @@ using namespace std;
 //             max_area = max(max_area, area);
 //         }
 //         return max_area;
+
+//Approach 3: 
+            //TC: O(n + n) =~ O(n) AS: O(n)
+        // int max_area = 0;
+        //int n = h.size();
+        //stack<int> s;
+        // for(int i = 0; i <= n; i++){
+        //     while(!s.empty() && (i == n || h[s.top()] >= h[i])){
+        //         int height = h[s.top()];
+        //         s.pop();
+        //         int width;
+        //         if(s.empty())   width = i;
+        //         else    width = i - s.top() - 1;
+        //         max_area = max(max_area, width * height);
+        //     }
+        //     s.push(i);
+        // }
+        // return max_area;
 //     }
 // };
 
