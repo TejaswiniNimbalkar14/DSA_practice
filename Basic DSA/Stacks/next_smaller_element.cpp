@@ -1,3 +1,6 @@
+//Find next smaller element
+//GFG Problem: 
+
 #include<iostream>
 #include<stack>
 using namespace std;
