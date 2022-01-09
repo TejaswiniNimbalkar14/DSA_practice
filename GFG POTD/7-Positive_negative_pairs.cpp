@@ -1,6 +1,10 @@
 //Positive negative pairs
 //GFG: https://practice.geeksforgeeks.org/problems/positive-negative-pair5209/1#
 
+
+#include<iostream>
+using namespace std;
+
 class Solution{
   public:
     //Function to return list containing all the pairs having both
