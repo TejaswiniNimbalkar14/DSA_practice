@@ -1,5 +1,5 @@
 //Add binary strings
-//GFG:
+//GFG: https://practice.geeksforgeeks.org/problems/add-binary-strings3805/1#
 //Leetcode: 67
 
 #include<bits/stdc++.h>
